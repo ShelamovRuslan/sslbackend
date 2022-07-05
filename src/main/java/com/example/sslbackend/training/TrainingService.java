@@ -6,10 +6,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class TrainingService {
 
-
-    public String str () {
-        return "ЮХУ У ТЕБЯ ВЫШЛО :)";
-    }
     public Cup cup () {
         return new Cup(1L, "Айс Латте");
     }

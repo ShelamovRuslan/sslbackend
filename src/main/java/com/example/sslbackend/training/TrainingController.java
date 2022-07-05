@@ -17,10 +17,6 @@ public class TrainingController {
         this.training = trainingService;
     }
 
-    @GetMapping("/start")
-    public ResponseEntity<String> start (){
-        return new ResponseEntity<>( training.str(), HttpStatus.OK);
-    }
     @GetMapping("/cup")
     public ResponseEntity<Cup> cup (){
         return new ResponseEntity<>( training.cup(), HttpStatus.OK);
