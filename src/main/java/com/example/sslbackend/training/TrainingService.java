@@ -11,6 +11,6 @@ public class TrainingService {
         return "ЮХУ У ТЕБЯ ВЫШЛО :)";
     }
     public Cup cup () {
-        return new Cup(1L, "Зеленая");
+        return new Cup(1L, "Айс Латте");
     }
 }
