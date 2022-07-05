@@ -1,4 +1,4 @@
-package com.example.sslbackend.entities;
+package com.example.sslbackend.user;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package com.example.sslbackend.entities;
+package com.example.sslbackend.shoppinglist;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
