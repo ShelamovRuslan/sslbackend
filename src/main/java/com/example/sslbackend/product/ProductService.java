@@ -3,6 +3,7 @@ package com.example.sslbackend.product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -27,5 +28,9 @@ public class ProductService {
     }
     public Product updateProduct(Product product) {
         return productRepository.save(product);
+    }
+
+    public List<Product> categoryProduct(String category) {
+        return productRepository.findAllByCategory(category);
     }
 }

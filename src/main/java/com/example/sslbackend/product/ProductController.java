@@ -34,6 +34,8 @@ public class ProductController {
         Product updateProduct = productService.updateProduct(product);
         return new ResponseEntity<>(updateProduct, HttpStatus.OK);
     }
-
-
+    @GetMapping("/all/{category}")
+    public ResponseEntity<List<Product>> categoryProduct(@PathVariable("category") String category) {
+        return new ResponseEntity<>(productService.categoryProduct(category), HttpStatus.OK);
+    }
 }
