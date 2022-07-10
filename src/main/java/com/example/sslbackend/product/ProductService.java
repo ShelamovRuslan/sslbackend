@@ -22,4 +22,10 @@ public class ProductService {
        return productRepository.findAll();
     }
 
+    public void deleteProduct(Integer id) {
+        productRepository.deleteById(id);
+    }
+    public Product updateProduct(Product product) {
+        return productRepository.save(product);
+    }
 }

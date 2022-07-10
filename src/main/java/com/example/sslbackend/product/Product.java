@@ -32,6 +32,9 @@ public class Product {
     @Column(name = "user_id")
     private Integer userId;
 
+    @Column(name = "category", length = 200)
+    private String category;
+
     public Integer getId() {
         return id;
     }
@@ -86,6 +89,14 @@ public class Product {
 
     public void setUserId(Integer userId) {
         this.userId = userId;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
 }
